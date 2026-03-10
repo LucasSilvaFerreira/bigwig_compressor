@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bigwig-compressor"
+version = "0.1.0"
+description = "Attenuate high-expression genes in RNA bigWig tracks while preserving bigWig output."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib==3.10.8",
+  "numpy",
+  "pyBigWig==0.3.25",
+]
+
+[project.scripts]
+attenuate-rna-bigwig = "attenuate_rna_bigwig:main"
+
+[tool.setuptools]
+py-modules = ["attenuate_rna_bigwig"]
