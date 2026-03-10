@@ -1,0 +1,2 @@
+matplotlib==3.10.8
+pyBigWig==0.3.25
